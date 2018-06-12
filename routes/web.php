@@ -15,7 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Route::get('blog/{year}/{month}/{slug}', 'PostController@show');
+Route::get('blog', 'PostController@home');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
