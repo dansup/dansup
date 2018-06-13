@@ -8,8 +8,10 @@
                 </div>
 
                 <div class="lead text-center font-weight-bold">
-                    <a href="/blog" class="mx-2 text-muted">Blog</a>
-                    <a href="https://github.com/dansup" class="mx-2 text-muted" rel="noopener">Github</a>
+                    <a href="/blog" class="mx-2" rel="me">Blog</a>
+                    <a href="https://github.com/dansup" class="mx-2 text-muted" rel="me noopener">Github</a>
+                    <a href="https://keybase.io/dansup" class="mx-2 text-muted" rel="me noopener">Keybase</a>
+                    <a href="https://mastodon.social/@dansup" class="mx-2 text-muted" rel="me noopener">Mastodon</a>
                 </div>
             </div>
         </div>
