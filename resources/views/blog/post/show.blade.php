@@ -3,8 +3,8 @@
 @section('content')
 <div class="container">
     <div class="col-12 col-md-8 offset-md-2 pt-3">
-        <a href="/" class="font-weight-bold">dansup</a>
-        <span class="px-2 text-muted">/</span>
+        <a href="/" class="font-weight-bold text-muted">dansup</a>
+        <span class="text-muted">/</span>
         <a href="/blog" class="font-weight-bold">blog</a>
     </div>
 </div>
