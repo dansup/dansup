@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'SiteController@home');
 
 Route::get('blog/{year}/{month}/{slug}', 'PostController@show');
 Route::get('blog', 'PostController@home');
