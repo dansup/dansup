@@ -7,12 +7,14 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Overpass:400,700" rel="stylesheet">
     <script src="{{ mix('js/app.js') }}" defer></script>
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     @stack('styles')
 
 </head>
-<body>
+<body class="bg-light">
     <div id="app">
         <main class="">
             @yield('content')

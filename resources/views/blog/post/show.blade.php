@@ -3,9 +3,9 @@
 @section('content')
 <div class="container">
     <div class="col-12 col-md-8 offset-md-2 pt-3">
-        <a href="/" class="font-weight-bold text-muted">dansup</a>
+        <a href="/" class="text-a font-weight-bold ">dansup</a>
         <span class="text-muted">/</span>
-        <a href="/blog" class="font-weight-bold">blog</a>
+        <a href="/blog" class="text-b font-weight-bold">blog</a>
     </div>
 </div>
 <div class="container mt-5">
@@ -15,7 +15,7 @@
             <a class="h1 font-weight-bold" href="{{$post->url()}}">
               {{$post->title}}
             </a>
-            <p class="text-muted small mb-0">
+            <p class="text-muted small font-weight-bold mb-0">
               {{$post->created_at->format('M j, Y')}}
             </p>
         </div>
