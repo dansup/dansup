@@ -1,14 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-
+<div class="container">
+    <div class="col-12 col-md-8 offset-md-2 pt-3">
+        <a href="/" class="text-a font-weight-bold ">dansup</a>
+        <span class="text-muted">/</span>
+        <a href="/blog" class="text-b font-weight-bold">blog</a>
+    </div>
+</div>
 <div class="container mt-5 py-5">
   <div class="col-12 col-md-8 offset-md-2 pt-3">
-      <div class="header">
-          <p class="display-4"><a href="/" class="text-muted">dansup</a> / <span class="text-primary">blog</span></p>
-          <hr>
-      </div>
-
       <div class="posts">
         @foreach($posts as $post)
           <div class="py-3">
@@ -22,7 +23,11 @@
           @if(!$loop->last)
           <hr>
           @endif
-          @endforeach
+       @endforeach
+
+       <div class="d-flex justify-content-center mt-4">
+        {{$posts->links()}}
+       </div>
       </div>
 
   </div>

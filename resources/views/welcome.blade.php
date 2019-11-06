@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="jumbotron jumbotron-fluid text-light d-flex align-items-center justify-content-center mb-0" style="background-color:#363537;height: 85vh;">
+<div class="jumbotron jumbotron-fluid text-light d-flex align-items-center justify-content-center mb-0" style="background-color:#363537;height: 700px;">
   <div class="container">
     <h1 class="display-4 font-overpass font-weight-bold">Hello, my name is <span class="text-b">Daniel</span>. <br>I am a <span class="">full stack developer</span> from Canada.<br>
     </h1>
@@ -10,7 +10,7 @@
 <div class="bg-light text-center py-4">
     <a class="text-b" href="#projects"><i class="fas fa-chevron-down fa-3x"></i></a>
 </div>
-<div class="bg-light d-flex align-items-center justify-content-center" style="height: 100vh;">
+<div class="bg-light d-flex align-items-center justify-content-center" style="height: 700px;">
     <div class="container row">
         <div class="col-12 my-4" id="projects">
             <p class="h3 text-b font-overpass font-weight-bold">Projects</p>
@@ -48,7 +48,7 @@
     </div>
 </div>
 
-<div class="bg-light d-flex align-items-center justify-content-center" style="min-height: 60vh;">
+<div class="bg-light d-flex align-items-center justify-content-center" style="min-height: 700px;">
     <div class="container row">
         <div class="col-12 mb-4" id="posts">
             <p class="h3 text-b font-overpass font-weight-bold">Latest Posts</p>
