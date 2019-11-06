@@ -1,4 +1,3 @@
-
 @import "variables";
 @import '~bootstrap/scss/bootstrap';
 
@@ -17,3 +16,64 @@
   font-size: 1rem;
 }
 
+a {
+	color: #EF2D56;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.font-overpass {
+    font-family: 'Overpass', sans-serif;
+}
+
+.bg-a {
+    background: #363537;
+}
+
+.text-a {
+    color: #363537;
+}
+
+.text-b {
+    color: #EF2D56;
+}
+
+.bg-b {
+    background: #EF2D56;
+}
+
+.text-c {
+    color: #ED7D3A;
+}
+
+.text-d {
+    color: #8CD867;
+}
+
+.text-e {
+    color: #2FBF71;
+}
+
+.bg-e {
+    background: #2FBF71;
+}
+
+a.card {
+    text-decoration: none;
+}
+
+.posts a.hover-b {
+    color: #6c757d;
+}
+
+.hover-b:hover {
+    color: #EF2D56 !important;
+    text-decoration: none;
+}
+
+.hover-e:hover {
+    color: #2FBF71 !important;
+    text-decoration: none;
+}
