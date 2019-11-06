@@ -9,7 +9,7 @@ class PostController extends Controller
 {
     public function home()
     {
-        $posts = Post::whereStatus('PUBLISHED')->orderBy('created_at', 'desc')->paginate(10);
+        $posts = Post::whereStatus('PUBLISHED')->orderBy('created_at', 'desc')->simplePaginate(3);
         return view('blog.home', compact('posts'));
     }
 

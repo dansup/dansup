@@ -9,7 +9,7 @@ class SiteController extends Controller
 {
 	public function home()
 	{
-		$posts = Post::orderBy('created_at', 'desc')->paginate(10);
+		$posts = Post::whereStatus('PUBLISHED')->orderBy('created_at', 'desc')->paginate(3);
 		return view('welcome', compact('posts'));
 	}
 }
