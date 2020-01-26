@@ -1,3 +1,3 @@
 # dansup
 
-My personal website/blog
+My personal website
