@@ -4,19 +4,104 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>dansup's website</title>
+		<style type="text/css">
+			body {
+				display: flex;
+				width: 100%;
+				min-height: 100vh;
+				margin: 0;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+			}
+
+			h1 {
+				font-size: 2rem;
+			}
+
+			li {
+				display: flex;
+				gap: 1rem;
+				min-height: 3rem;
+				align-items: center;
+				margin-bottom: .5rem;
+			}
+
+			li > a {
+				font-size: 18px;
+				font-weight: bold;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			.about {
+				width: 100%;
+				text-align: center;
+				max-width: 269px;
+			}
+
+			.avatar {
+				margin: 1rem 0;
+			}
+
+			.avatar > img {
+				border-radius: 1rem;
+			}
+
+			.email-icon {
+				font-size: 2.5rem;
+				margin-right: .4rem;
+			}
+
+			.quote {
+				text-align: center;
+				max-width: 400px;
+			}
+
+			.quote p {
+				font-style: italic;
+			}
+
+			.quote footer {
+				color: #ccc;
+			}
+		</style>
 	</head>
 	<body>
-		<header>
+		<section class="avatar">
+			<img src="me.png" width="300" height="300" alt="A photo of me with a Snapchat filter that added a fake beard and cool sunglasses 😎">
+		</section>
+
+		<section class="about">
 			<h1>hi, I'm dansup 😎</h1>
-			<p>Full stack developer working on <a href="https://pixelfed.org">pixelfed</a></p>
-		</header>
-		<footer>
-			<a href="https://twitter.com/dsup" rel="me">Twitter</a>
-			&bull; <a href="https://github.com/dansup/" rel="me">GitHub</a>
-			&bull; <a href="https://mastodon.social/@dansup" rel="me">Mastodon</a>
-			&bull; <a href="https://pixelfed.social/dansup" rel="me">Pixelfed</a>
-			<br/><br/>Matrix: @dansup:matrix.org
-		</footer>
-		<!-- design stolen from lukevers.com, thanks luke! -->
+			<p>aspiring astronaut, <a href="https://en.wikipedia.org/wiki/Pixelfed">community creator</a> and determined dreamer.</p>
+			<hr />
+			<p>Currently building <a href="https://pixelfed.org">Pixelfed</a>, an ethical and <a href="https://fediverse.info">federated</a> photo sharing platform powered by <a href="https://en.wikipedia.org/wiki/ActivityPub">ActivityPub</a>.</p>
+		</section>
+
+		<section>
+			<ul>
+				<li><img src="github.svg" width="40" height="40" alt="GitHub logo" /> <a href="https://github.com/dansup/" rel="me">@dansup</a></li>
+				<li><img src="pixelfed.svg" width="40" height="40" alt="Pixelfed logo" /> <a href="https://pixelfed.social/dansup" rel="me">@dansup</a></li>
+				<li><img src="mastodon.svg" width="40" height="40" alt="Mastodon logo"/> <a href="https://mastodon.social/@dansup" rel="me">@dansup</a></li>
+				<li><img src="pixelfed.svg" width="40" height="40" alt="Pixelfed logo" /> <a href="https://pixelfed.social/pixelfed" rel="me">@pixelfed</a></li>
+				<li><img src="mastodon.svg" width="40" height="40" alt="Mastodon logo"/> <a href="https://mastodon.social/@pixelfed" rel="me">@pixelfed</a></li>
+				<li><img src="discord.svg" width="40" height="40" alt="Discord logo" /> <a href="https://discord.com">@dansup</a></li>
+				<li><span class="email-icon">@</span> <a href="mailto:danielsupernault@gmail.com" target="_blank" style="font-size:12px;">danielsupernault@gmail.com</a></li>
+			</ul>
+		</section>
+
+		<section class="about">
+			<hr />
+		</section>
+
+		<section class="quote">
+			<blockquote cite="https://www.goodreads.com/quotes/201306-when-you-don-t-create-things-you-become-defined-by-your">
+			  <p>"When you don't create things, you become defined by your tastes rather than your ability. Your tastes only narrow & exclude people. So create."</p>
+			  <footer>—Why The Lucky Stiff, <cite>Goodreads</cite></footer>
+			</blockquote>
+		</section>
 	</body>
 </html>
